@@ -1,0 +1,57 @@
+{
+    "args0": [
+        {
+            "type": "input_value",
+            "name": "item",
+            "check": "MCItem"
+        },
+        {
+            "type": "input_value",
+            "name": "shoot_animation",
+            "check": "String"
+        },
+        {
+            "type": "input_value",
+            "name": "reload_animation",
+            "check": "String"
+        },
+        {
+            "type": "input_value",
+            "name": "shoot_cond",
+            "check": "Boolean"
+        },
+        {
+            "type": "input_value",
+            "name": "reload_cond",
+            "check": "Boolean"
+        },
+        {
+            "type": "input_value",
+            "name": "idle",
+            "check": "String"
+        }
+    ],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 364,
+    "mcreator": {
+        "toolbox_id": "gunactions",
+        "toolbox_init": [
+            "<value name=\"item\"><block type=\"itemstack_to_mcitem\"><field name=\"value\"></field></block></value>",
+            "<value name=\"shoot_animation\"><block type=\"text\"><field name=\"TEXT\">shoot</field></block></value>",
+            "<value name=\"reload_animation\"><block type=\"text\"><field name=\"TEXT\">reload</field></block></value>",
+            "<value name=\"shoot_cond\"><block type=\"logic_boolean\"><field name=\"BOOL\">TRUE</field></block></value>",
+            "<value name=\"reload_cond\"><block type=\"logic_boolean\"><field name=\"BOOL\">TRUE</field></block></value>",
+            "<value name=\"idle\"><block type=\"text\"><field name=\"TEXT\">idle</field></block></value>"
+        ],
+        "inputs": [
+            "item",
+            "shoot_animation",
+            "reload_animation",
+            "shoot_cond",
+            "reload_cond",
+            "idle"
+        ]
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "args0": [
+        {
+            "type": "input_value",
+            "name": "entity",
+            "check": "Entity"
+        },
+        {
+            "type": "input_value",
+            "name": "index",
+            "check": "Number"
+        },
+        {
+            "type": "field_image",
+            "src": "./res/client.png",
+            "width": "8",
+            "height": "24"
+        }
+    ],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "%{BKY_MATH_HUE}",
+    "mcreator": {
+        "toolbox_id": "gunactions",
+        "toolbox_init": [
+            "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>",
+            "<value name=\"index\"><block type=\"math_number\"><field name=\"NUM\">5</field></block></value>"
+        ],
+        "inputs": [
+            "entity",
+            "index"
+        ]
+    }
+}

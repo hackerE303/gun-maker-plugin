@@ -1,0 +1,26 @@
+{
+  "id": "gun_maker_plugin",
+  "weight": "303",
+  "javaplugin": "net.hacker_E303.gun_maker.Launcher",
+  "supportedversions": [
+
+	  2024001,
+	  2024002,
+	  2024003,
+	  2024004,
+  	2025001,
+	  2025002,
+    202500299999,
+	  2025003,
+    2026001
+  ],
+  
+  "info": {
+    "name": "Gun Maker Plugin",
+    "version": "1.9.8",
+    "description": "Java plugin for devs who want to create guns in a simple and accurate way.",
+    "author": "hacker_E303",
+	  "pluginPageID": 118326,
+	  "updateJSONURL": "https://raw.githubusercontent.com/hackerE303/gun-maker-plugin/main/update.json"
+  }
+}

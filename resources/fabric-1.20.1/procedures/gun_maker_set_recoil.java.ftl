@@ -1,0 +1,1 @@
+${input$entity}.setXRot(${input$entity}.getXRot() - (float) ${input$index});

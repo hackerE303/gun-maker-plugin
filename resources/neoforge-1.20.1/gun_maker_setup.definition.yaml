@@ -1,0 +1,3 @@
+templates:
+  - template: gun_maker_setup/gun_maker_setup.java.ftl
+    name: "@SRCROOT/@BASEPACKAGEPATH/gun_maker/GunMaker.java"

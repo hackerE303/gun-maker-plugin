@@ -1,0 +1,1 @@
+${input$entity} instanceof Mob mob && mob.getNavigation().createPath(BlockPos.containing(${input$x}, ${input$y}, ${input$z}), 0) != null

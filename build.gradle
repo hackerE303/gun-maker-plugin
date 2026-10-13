@@ -1,0 +1,65 @@
+plugins {
+    id 'java'
+}
+
+group 'net.hacker_E303'
+version '1.9.0'
+
+sourceCompatibility = 21
+targetCompatibility = 21
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+        resources {
+            srcDirs = ['resources']
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly fileTree(dir: 'lib', include: '*.jar')
+}
+
+tasks.compileJava {
+    options.encoding = 'UTF-8'
+}
+
+tasks.processResources {
+    duplicatesStrategy = 'include'
+}
+
+tasks.withType(Jar) {
+    archiveBaseName.set("gun_maker_plugin")
+    archiveVersion.set("")
+    manifest {
+        attributes 'Main-Class': 'net.hacker_E303.gun_maker.Launcher'
+    }
+}
+
+task createZip(type: Zip) {
+    archiveBaseName.set("gun_maker_plugin")
+    archiveVersion.set("")
+    archiveExtension.set("zip")
+
+    def mcreatorPluginsDir = file(System.getProperty('user.home') + '/.mcreator/plugins')
+    destinationDirectory.set(mcreatorPluginsDir)
+    
+    doFirst {
+        mcreatorPluginsDir.mkdirs()
+    }
+    from(sourceSets.main.output)
+
+    from(sourceSets.main.resources.srcDirs) {
+        include '**/*'
+    }
+    duplicatesStrategy = 'include'
+}
+
+createZip.dependsOn compileJava, processResources

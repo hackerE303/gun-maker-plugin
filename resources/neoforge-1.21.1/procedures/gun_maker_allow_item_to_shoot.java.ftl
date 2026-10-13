@@ -1,0 +1,1 @@
+GunMaker.GunUtils.setValue(${input$item}, GunMaker.GunUtils.SHOULD_SHOOT, ${input$condition});

@@ -1,0 +1,100 @@
+{
+    "args0": [
+        {
+            "type": "input_value",
+            "name": "repeat",
+            "check": "Number"
+        },
+        {
+            "type": "input_value",
+            "name": "projectile",
+            "check": "ProjectileEntity"
+        },
+        {
+            "type": "input_value",
+            "name": "entity",
+            "check": "Entity"
+        },
+        {
+            "type": "field_dropdown",
+            "name": "shoot_mode",
+            "options": [
+                [
+                    "SHOTGUN_MODE",
+                    "SHOTGUN_MODE"
+                ],
+                [
+                    "SEMI_AUTOMATIC_MODE",
+                    "SEMI_AUTOMATIC_MODE"
+                ],
+                [
+                    "MACHINE_GUN_MODE",
+                    "MACHINE_GUN_MODE"
+                ]
+            ]
+        },
+        {
+            "type": "input_value",
+            "name": "speed",
+            "check": "Number"
+        },
+        {
+            "type": "input_value",
+            "name": "item",
+            "check": "MCItem"
+        },
+        {
+            "type": "input_value",
+            "name": "shot_inaccuracy",
+            "check": "Number"
+        },
+        {
+            "type": "input_value",
+            "name": "recoil",
+            "check": "Number"
+        },
+        {
+            "type": "input_value",
+            "name": "recovery",
+            "check": "Number"
+        }
+    ],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 190,
+    "mcreator": {
+        "toolbox_id": "gunactions",
+        "toolbox_init": [
+            "<value name=\"repeat\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value>",
+            "~<value name=\"projectile\"><block type=\"projectiles_throwable\"><field name=\"projectile\">Snowball</field><value name=\"shooter\"><block type=\"entity_none\"></block></value></block></value>",
+            "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>",
+            "<value name=\"speed\"><block type=\"math_number\"><field name=\"NUM\">10</field></block></value>",
+            "<value name=\"item\"><block type=\"itemstack_to_mcitem\"><field name=\"value\"></field></block></value>",
+            "<value name=\"shot_inaccuracy\"><block type=\"math_number\"><field name=\"NUM\">3</field></block></value>",
+            "<value name=\"recoil\"><block type=\"math_number\"><field name=\"NUM\">5</field></block></value>",
+            "<value name=\"recovery\"><block type=\"math_number\"><field name=\"NUM\">20</field></block></value>"
+        ],
+        "inputs": [
+            "repeat",
+            {
+                "name": "projectile",
+                "provides": [
+                    {
+                        "name": "projectileLevel",
+                        "type": "world"
+                    }
+                ]
+            },
+            "entity",
+            "speed",
+            "item",
+            "shot_inaccuracy",
+            "recoil",
+            "recovery"
+        ],
+        "fields": [
+            "shoot_mode"
+        ]
+    }
+}

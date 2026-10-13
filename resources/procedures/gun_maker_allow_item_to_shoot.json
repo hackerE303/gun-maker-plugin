@@ -1,0 +1,29 @@
+{
+    "args0": [
+        {
+            "type": "input_value",
+            "name": "condition",
+            "check": "Boolean"
+        },
+        {
+            "type": "input_value",
+            "name": "item",
+            "check": "MCItem"
+        }
+    ],
+    "inputsInline": false,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "%{BKY_LOGIC_HUE}",
+    "mcreator": {
+        "toolbox_id": "gunactions",
+        "toolbox_init": [
+            "<value name=\"condition\"><block type=\"gun_maker_mouse_key_is_pressed\"><field name=\"button\">RIGHT</field><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value>",
+            "<value name=\"item\"><block type=\"itemstack_to_mcitem\"><field name=\"value\"></field></block></value>"
+        ],
+        "inputs": [
+            "condition",
+            "item"
+        ]
+    }
+}

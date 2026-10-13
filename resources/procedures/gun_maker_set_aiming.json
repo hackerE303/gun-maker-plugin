@@ -1,0 +1,29 @@
+{
+    "args0": [
+        {
+            "type": "input_value",
+            "name": "item",
+            "check": "MCItem"
+        },
+        {
+            "type": "input_value",
+            "name": "condition",
+            "check": "Boolean"
+        }
+    ],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "%{BKY_LOGIC_HUE}",
+    "mcreator": {
+        "toolbox_id": "gunactions",
+        "toolbox_init": [
+            "<value name=\"item\"><block type=\"itemstack_to_mcitem\"><field name=\"value\"></field></block></value>",
+            "<value name=\"condition\"><block type=\"logic_boolean\"><field name=\"BOOL\">TRUE</field></block></value>"
+        ],
+        "inputs": [
+            "item",
+            "condition"
+        ]
+    }
+}

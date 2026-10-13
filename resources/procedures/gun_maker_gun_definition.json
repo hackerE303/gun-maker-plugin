@@ -1,0 +1,91 @@
+{
+    "args0": [
+        {
+            "type": "input_value",
+            "name": "max_ammo",
+            "check": "Number"
+        },
+        {
+            "type": "input_value",
+            "name": "ammo_type",
+            "check": "String"
+        },
+        {
+            "type": "field_dropdown",
+            "name": "range",
+            "options": [
+                [
+                    "LONG",
+                    "Long"
+                ],
+                [
+                    "MEDIUM",
+                    "Medium"
+                ],
+                [
+                    "SHORT",
+                    "Short"
+                ]
+            ]
+        },
+        {
+            "type": "field_checkbox",
+            "name": "level",
+            "checked": false
+        },
+        {
+            "type": "input_value",
+            "name": "ability",
+            "check": "String"
+        },
+        {
+            "type": "input_value",
+            "name": "advantage",
+            "check": "String"
+        },
+        {
+            "type": "input_value",
+            "name": "item",
+            "check": "MCItem"
+        },
+        {
+            "type": "input_value",
+            "name": "item_name",
+            "check": "String"
+        },
+        {
+            "type": "input_value",
+            "name": "damage",
+            "check": "Number"
+        }
+    ],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#A77F2F",
+    "mcreator": {
+        "toolbox_id": "gundefinitions",
+        "toolbox_init": [
+            "<value name=\"max_ammo\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value>",
+            "<value name=\"ammo_type\"><block type=\"text\"><field name=\"TEXT\">magazine</field></block></value>",
+            "<value name=\"ability\"><block type=\"text\"><field name=\"TEXT\"></field></block></value>",
+            "<value name=\"advantage\"><block type=\"text\"><field name=\"TEXT\"></field></block></value>",
+            "<value name=\"item\"><block type=\"itemstack_to_mcitem\"><field name=\"value\"></field></block></value>",
+            "<value name=\"item_name\"><block type=\"text\"><field name=\"TEXT\">name</field></block></value>",
+            "<value name=\"damage\"><block type=\"math_number\"><field name=\"NUM\">5</field></block></value>"
+        ],
+        "inputs": [
+            "max_ammo",
+            "ammo_type",
+            "ability",
+            "advantage",
+            "item",
+            "item_name",
+            "damage"
+        ],
+        "fields": [
+            "range",
+            "level"
+        ]
+    }
+}

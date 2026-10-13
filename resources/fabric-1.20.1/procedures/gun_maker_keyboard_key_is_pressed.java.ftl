@@ -1,0 +1,1 @@
+InputConstants.isKeyDown(Minecraft.getInstance().getWindow().getWindow(), GLFW.GLFW_KEY_${field$letter})

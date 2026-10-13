@@ -1,0 +1,1 @@
+(${input$projectile} instanceof AbstractArrow ? ((AbstractArrow) (${input$projectile})).getOwner() : null)

@@ -1,0 +1,19 @@
+# VS Code / Eclipse temp files che rompono la configurazione Gradle
+.classpath
+.project
+.settings/
+.vscode/
+
+# Gradle
+.gradle/
+build/
+*.log
+
+# Build artifacts
+bin/
+temp/
+tmp/
+
+# OS files
+.DS_Store
+Thumbs.db

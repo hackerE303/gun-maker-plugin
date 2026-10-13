@@ -1,0 +1,93 @@
+{
+    "args0": [
+        {
+            "type": "field_dropdown",
+            "name": "color",
+            "options": [
+                [
+                    "WHITE",
+                    "\u00a7f"
+                ],
+                [
+                    "GRAY",
+                    "\u00a77"
+                ],
+                [
+                    "DARK_GRAY",
+                    "\u00a78"
+                ],
+                [
+                    "BLACK",
+                    "\u00a70"
+                ],
+                [
+                    "RED",
+                    "\u00a7c"
+                ],
+                [
+                    "DARK_RED",
+                    "\u00a74"
+                ],
+                [
+                    "GREEN",
+                    "\u00a7a"
+                ],
+                [
+                    "DARK_GREEN",
+                    "\u00a72"
+                ],
+                [
+                    "YELLOW",
+                    "\u00a7e"
+                ],
+                [
+                    "DARK_YELLOW",
+                    "\u00a76"
+                ],
+                [
+                    "BLUE",
+                    "\u00a79"
+                ],
+                [
+                    "DARK_BLUE",
+                    "\u00a71"
+                ],
+                [
+                    "AQUA",
+                    "\u00a7b"
+                ],
+                [
+                    "DARK_AQUA",
+                    "\u00a73"
+                ],
+                [
+                    "LIGHT_PURPLE",
+                    "\u00a7d"
+                ],
+                [
+                    "DARK_PURPLE",
+                    "\u00a75"
+                ],
+                [
+                    "PINK",
+                    "\u00a7d"
+                ],
+                [
+                    "ORANGE",
+                    "\u00a76"
+                ]
+            ]
+        }
+    ],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#A77F2F",
+    "mcreator": {
+        "toolbox_id": "gundefinitions",
+        "toolbox_init": [],
+        "fields": [
+            "color"
+        ]
+    }
+}

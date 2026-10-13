@@ -1,0 +1,9 @@
+{
+  "gun_maker_plugin": {
+    "latest": "1.9.8",
+    "changes": [
+      "- Fully compatible with MCreator",
+      "If something does not work, please, let us know on Discord"
+    ]
+  }
+}
